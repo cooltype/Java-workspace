@@ -1,0 +1,18 @@
+
+public class CompanyTable {
+	
+	// This class loads Records of Car hire brnaches into a data stuct
+	
+	public Boolean init()
+	{
+		Boolean Retres = false;
+		
+		
+		
+		return Retres;
+	}
+	
+	
+	
+
+}

@@ -1,0 +1,56 @@
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+
+public class CompanyTable {
+	
+	// This class loads Records of Car hire branches into a data stuct
+	
+	private static Map<Integer, String> CompanyTable;
+	
+	CompanyTable()
+	{
+		CompanyTable = new HashMap<Integer,String>();
+		CompanyTable.put(0, "161.73.147.225:5120");
+		CompanyTable.put(1, "161.73.147.225:5121");		
+	}
+	
+	public String IsValid(int ID)
+	{
+		String RetVal = CompanyTable.get((Integer)ID);		
+		return RetVal;
+	}
+	
+	public int IsValid(String IP)
+	{
+		int RetVal = (-1);
+		for (Entry<Integer, String> entry : CompanyTable.entrySet()) {
+	        if (IP.equals(entry.getValue())) {
+	        	RetVal = (int)entry.getKey();
+	        }
+	    }		
+		return RetVal;
+	}
+	
+	public Boolean Add(int ID, String IP)
+	{
+		boolean RetVal = false;
+		// first check they're not already in there
+		System.out.println("input values" + ID + " & " + IP);
+		String CheckID = IsValid((ID));
+		System.out.println("Check if ID already exsits: " + CheckID);
+		if (CheckID != null)
+		{
+			int CheckIP = IsValid(IP);
+			System.out.println("Check if IPalready exsits: " + CheckIP);
+			if (CheckIP == (-1))
+			{ // its not in there already, put it in
+				System.out.println("in Add Section");
+				CompanyTable.put((Integer) ID, IP);
+				RetVal = true;				
+			}// its in there, return error - boolean already set					
+		}		
+		return RetVal;	
+	}
+
+}

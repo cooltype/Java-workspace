@@ -1,0 +1,36 @@
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+
+public class CompanyTable {
+	
+	// This class loads Records of Car hire branches into a data stuct
+	
+	private static Map<Integer, String> CompanyTable;
+	
+	private CompanyTable()
+	{
+		CompanyTable = new HashMap<Integer,String>();
+		CompanyTable.put(0, "161.73.147.225,5120");
+		CompanyTable.put(1, "161.73.147.225,5121");		
+	}
+	
+	public String IsValid(Integer ID)
+	{
+		String RetVal = CompanyTable.get(ID);		
+		return RetVal;
+	}
+	
+	public int IsValid(String IP)
+	{
+		int RetVal = (-1);
+		for (Entry<Integer, String> entry : CompanyTable.entrySet()) {
+	        if (IP.equals(entry.getValue())) {
+	        	RetVal = (int)entry.getKey();
+	        }
+	    }		
+		return RetVal;
+	}
+	
+
+}

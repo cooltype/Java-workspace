@@ -1,0 +1,24 @@
+import java.net.InetSocketAddress;
+import java.util.HashMap;
+import java.util.Map;
+
+public class CompanyTable {
+	
+	// This class loads Records of Car hire branches into a data stuct
+	
+	
+	
+	public Boolean init()
+	{
+		Map<Integer, InetSocketAddress> CompanyTable = new HashMap<Integer,InetSocketAddress>();
+		Boolean Retres = false;
+		CompanyTable.put(0, arg1);
+		
+		
+		return Retres;
+	}
+	
+	
+	
+
+}
