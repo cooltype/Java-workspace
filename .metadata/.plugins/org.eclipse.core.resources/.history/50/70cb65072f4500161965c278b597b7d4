@@ -1,0 +1,21 @@
+package distSysServer;
+
+public class headOffice {
+	
+	// receives initial request from the app
+	/*
+	 * user details -> 1) guest 2) new user 3) exiting user
+	 * 1) new user flag = false; login name = guest
+	 * 2) new user flag = true ; login name = nnn; name = xxx, email = eee
+	 * 3) new user flag = false; login name = nnn
+	 * 1,2,3) -password = ppp
+	 * 1,2,3) - branch = bbb
+	 * 
+	 * checks details are correct
+	 * 
+	 * 
+	 * 
+	 * 
+	 */
+
+}

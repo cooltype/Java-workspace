@@ -1,0 +1,9 @@
+INDEX VERSION 1.3+C:\Users\lfrob\workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+637209415.index
+1977985886.index
+2921432574.index
+2958663041.index
+690183237.index
+3273596021.index
+4141193451.index
+3083702155.index

@@ -1,0 +1,25 @@
+package distSysServer;
+
+public class headOffice {
+	
+	// receives initial request from the app
+	/*
+	 * user details -> 1) guest 2) new user 3) exiting user
+	 * 1) new user flag = false; login name = guest
+	 * 2) new user flag = true ; login name = nnn; name = xxx, email = eee
+	 * 3) new user flag = false; login name = nnn
+	 * 1,2,3) -password = ppp
+	 * 1,2,3) - branch = bbb
+	 * 
+	 * checks if details exist and are correct in db
+	 * if details exist in db
+	 * 	if NUF = f = return successful login (auth token?)
+	 *  else return error
+	 * if NUF = t 
+	 * 	else wrtie details into db and return success login
+	 * 
+	 * 
+	 * 
+	 */
+
+}

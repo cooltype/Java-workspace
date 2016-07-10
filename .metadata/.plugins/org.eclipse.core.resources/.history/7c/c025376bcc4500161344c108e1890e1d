@@ -1,0 +1,42 @@
+package distSysServer;
+
+public class headOffice {
+	
+	// 4 web services
+		// Get user record
+		// change user record
+		// get vehicle record(s)
+		// change vehicle record
+	/*
+	 * user details -> 1) guest 2) new user 3) exiting user
+	 * 1) new user flag = false; login name = guest
+	 * 2) new user flag = true ; login name = nnn; name = xxx, email = eee
+	 * 3) new user flag = false; login name = nnn
+	 * 1,2,3) -password = ppp
+	 * 1,2,3) - branch = bbb
+	 * 
+	 * checks if details exist and are correct in db
+	 * if details exist in db
+	 * 	if NUF = f = return successful login (auth token?)
+	 *  else return error
+	 * if NUF = t 
+	 * 	else write details into db and return success login
+	 * 
+	 * 
+	 * 
+	 */
+
+	
+	/* get vehicle record - WS3
+	 *   vehicle id comes in as all, or 1 reg / booking no
+	 *   pull up matching records and return to app, or blank if none
+	 *   (app decides if exist of record is problem or not)
+	 *
+	 * change vehicle record - WS4
+	 *   receive amended xml back
+	 *   check for existing record 
+	 *   check action flag
+	 *   if action allowed, change record to new values, return sucess
+	 *       else return error
+	 */
+}

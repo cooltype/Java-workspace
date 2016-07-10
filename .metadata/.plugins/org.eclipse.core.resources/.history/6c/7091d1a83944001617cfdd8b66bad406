@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+encoding//src/myServerTest/Hello.java=UTF-8
+encoding//src/myServerTest/HelloService.java=UTF-8
+encoding//src/myServerTest/HelloSoapBindingStub.java=UTF-8
